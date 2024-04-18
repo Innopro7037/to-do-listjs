@@ -1,4 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
     const taskForm = document.getElementById('taskForm');
     const taskInput = document.getElementById('taskInput');
     const taskList = document.getElementById('taskList');
@@ -18,11 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
         taskList.appendChild(taskItem);
 
-        taskInput.value = '';
-
         // Add event listener for delete button
         taskItem.querySelector('button').addEventListener('click', function() {
             taskItem.remove();
         });
     });
-});
