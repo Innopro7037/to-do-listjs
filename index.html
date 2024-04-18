@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spiderman ToDo App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Innopro.dev's Todo App ✍🏽</h1>
+      <form id="taskForm">
+        <input type="text" id="taskInput" placeholder="Add new task..." />
+        <select id="priority">
+          <option value="Fairly Important">Low Priority</option>
+          <option value="Very Important">Medium Priority</option>
+          <option value="Godly Urgent">High Priority</option>
+        </select>
+        <input type="date" id="dueDate" />
+        <button type="submit">Add Task</button>
+      </form>
+      <ul id="taskList"></ul>
+      <p>Built by your friendly neighbourhood Spiderman.</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
